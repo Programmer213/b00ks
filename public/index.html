@@ -1,0 +1,95 @@
+<html>
+<header>
+    <title>Books</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</header>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="site_navigation.js"></script>
+
+    <div id="content_wrapper">
+        <div id="header">
+            <div id="header_default">
+                <p id="was_kann_navigation" class="clickable">Was kann Books</p>
+                <p id="preise_navigation" class="clickable">Preise (Spoiler: 0)</p>
+                <p id="einloggen_navigation" class="clickable">Einloggen</p>
+                <p id="registrieren_navigation" class="clickable">Registrieren</p>
+            </div>
+
+            <div id="header_logged_in">
+                <p id="my_books_navigation" class="clickable">Meine Bücher</p>
+                <p id="my_recommendations_navigation" class="clickable">Meine Empfehlungen</p>
+                <p id="ausloggen_navigation" class="clickable">Ausloggen</p>
+            </div>
+        </div>
+
+
+        <div class="content" id="was_kann_content">
+            <p>Was kann<br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br><br>
+
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+        </div>
+
+        <div class="content" id="preise_content">
+            <p>Preise<br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br><br>
+
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+        </div>
+
+        <div class="content" id="einloggen_content">
+            <div class="box">
+                <p class="hidden hint">Ein Benutzer mit diesen Anmeldedaten existiert nicht</p>
+                <input id="login_email" type="email" placeholder="email"/>
+                <input id="login_password" type="password" placeholder="password"/>
+                <input id="login_button" type="button" value="einloggen"/>
+            </div>
+        </div>
+
+        <div class="content" id="registrieren_content">
+            <div class="box">
+                <input id="register_email" type="email" placeholder="email"/>
+                <input id="register_password" type="password" placeholder="password"/>
+                <input id="register_button" type="button" value="registrieren"/>
+            </div>
+        </div>
+
+        <div class="content" id="registered_content">
+            <p>Du hast dich erfolgreich bei Books registriert. Du kannst dich ab sofort einloggen und alle Features benutzen!</p>
+        </div>
+
+        <div class="content" id="logged_in_content">
+            <p>Du hast dich erfolgreich bei Books eingeloggt!</p>
+        </div>
+
+        <div class="content" id="ausloggen_content">s
+        </div>
+        <div class="content" id="my_books_content">
+            <p>Bitte füge an dieser Stelle nur die Bücher ein, die dir gefallen.<br>Je mehr Bücher du einfügst und je präziser du bei der Auswahl dieser Bücher bist, desto präziser wird auch deine persönliche Buchempfehlung :D</p>
+            <div id="book_search_container">
+                <div id="book_search_textfieldbutton">
+                    <input id="book_search_input" type="text" placeholder="Titel, Autor oder ISBN"/>
+                    <input id="book_search_button" type="button" value="suchen"/>
+                </div>
+                <div id="book_search_results" class="book_container">
+                    <!-- search result books go here -->
+                </div>
+            </div>
+            <p id="search_result_hint" class="hint hidden">Keine Suchergebnisse</p>
+            <div class="divider"></div>
+            <div id="my_books" class="book_container">
+                <!-- library goes here -->
+
+            </div>
+        </div>
+        <div class="content" id="my_recommendations_content">
+            recoms
+        </div>
+    </div>
+</body>
+</html>

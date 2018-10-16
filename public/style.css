@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Lato;
+}
+
+#header{
+    color:#FFF;
+    background-color:#630202;
+    /*72061c*/ - weinrot
+
+}
+#header_default, #header_logged_in{
+    padding:20px 0;
+    display:flex;
+    justify-content: space-around;
+}
+#header_logged_in{
+    display:none;
+}
+#header p{
+    display:inline;
+    font-size:180%;
+}
+
+#content_wrapper{
+    min-height:100vh;
+    margin-bottom:0;
+
+    background:url("res/rey-seven-479590-unsplash.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+.content{
+    width:70%;
+    margin:0 auto;
+    background-color:rgba(0,0,0,0.5);
+    margin-top:20px;
+    padding:40px;
+    color:#FFF;
+    font-size:130%;
+    display:none;
+}
+#was_kann_content{
+    display:block;
+}
+
+/* General Element Style */
+input[type=text], input[type=email], input[type=password], input[type=button]{
+    margin:20px auto;
+    font-size:120%;
+    display:block;
+    padding:5px 10px;
+    width:100%;
+    background-color:#fff1ea;
+    color:#222;
+    border-width:0;
+}
+input[type=button]{
+    background-color:#630202;
+    color:#FFF;
+}
+input[type=button]:hover{
+    background-color: #4c0101;
+}
+
+.box{
+    width:40%;
+    margin:0 auto;
+}
+
+/* Book_container and Books */
+.book_container{
+    padding-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.book{
+    background-color:#fff1ea;
+    color:#222;
+    padding:10px;
+    display:flex;
+    flex-direction:horizontal;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    margin:20px;
+    border-radius:2px;
+    position:relative;
+}
+.book img{
+    flex-shrink:0;
+}
+.book_text_container{
+    margin-left:10px;
+}
+img.book_status{
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    width:25px;
+    height:25px;
+    background-color:#630202;
+    padding:5px;
+    border-radius:5px;
+
+    transform: scale(1) rotate(0deg);
+    transition: transform 0.25s;
+    animation-name:none;
+}
+img.book_status:hover{
+    transform: scale(1.5) rotate(-350deg);
+    transition: transform 0.25s;
+    animation-name:none;
+}
+img.book_status.turn{
+    animation: turn 0.5s 1;
+}
+
+@keyframes turn{
+    0% {
+        transform: rotate(-350deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(370deg) scale(1.5);
+    }
+}
+
+#book_search_textfieldbutton{
+    display:flex;
+    flex-direction:horizontal;
+}
+#book_search_button{
+    width:10%;
+}
+
+/* General Purpose Classes */
+.divider{
+    width:100%;
+    border-bottom:1.5px solid #FFF;
+    margin:20px 0;
+}
+.hint{
+    color:#FFF;
+    font-style:italic;
+}
+
+.clickable{
+    cursor:pointer;
+}
+
+.hidden{
+    display:none;
+}
